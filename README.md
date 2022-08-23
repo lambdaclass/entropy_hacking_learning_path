@@ -1,6 +1,30 @@
 # hacking_learning_path
 Entropy1729's Learning path
 
+## Entropy's stack
+
+### Programming languages
+
+* Rust
+* Elixir
+* Leo
+* Aleo Instructions
+
+### Apps
+
+#### Core
+* Github
+* Google suite
+* Slack
+* 1Password
+
+#### Devops
+* Nomad
+* Fabio
+
+#### Project Management
+* Clickup
+
 ## Short reads
 ### Classic cryptography
 - [New Directions in Cryptography](https://ee.stanford.edu/~hellman/publications/24.pdf)
