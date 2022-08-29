@@ -37,7 +37,12 @@ Technology is a powerful force in our society. Data, software, and communication
 - [Crypto glossary](https://a16z.com/2019/11/08/crypto-glossary/)
 - [Introduction to Smart Contracts](https://docs.soliditylang.org/en/latest/introduction-to-smart-contracts.html)
 
-### zero-knowledge proofs
+## Consensus
+- [Paxos(etcd) vs. Nakamoto(Bitcoin) consensus](https://gyuho.dev/paxos-etcd-vs-nakamoto-bitcoin-consensus.html)
+- [Nakamoto Bitcoin vs Snow Avalanche consensus](https://gyuho.dev/nakamoto-bitcoin-vs-snow-avalanche-consensus.html)
+- [Tendermint whitepaper](https://tendermint.com/static/docs/tendermint.pdf)
+
+### Zero Knowledge Proofs
 - [What are zk-SNARKs?](https://z.cash/technology/zksnarks/)
 - [Quadratic Arithmetic Programs: from Zero to Hero](https://medium.com/@VitalikButerin/quadratic-arithmetic-programs-from-zero-to-hero-f6d558cea649)
 - [Explaining SNARKs](https://electriccoin.co/blog/snark-explain/) (series)
@@ -45,6 +50,9 @@ Technology is a powerful force in our society. Data, software, and communication
 - [Zerocoin paper](https://zerocoin.org/media/pdf/ZerocoinOakland.pdf)
 - [Zerocash paper](http://zerocash-project.org/media/pdf/zerocash-oakland2014.pdf)
 
+## Courses
+- [CS 251: Blockchain Technologies](https://cs251.stanford.edu/syllabus.html)
+- [Decentralized Finance MOOC](https://defi-learning.org/f22)
 
 ## Books
 - Programming Bitcoin
