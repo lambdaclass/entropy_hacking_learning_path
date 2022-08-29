@@ -26,12 +26,11 @@ Technology is a powerful force in our society. Data, software, and communication
 #### Project Management
 * Clickup
 
-## Short reads
-### Classic cryptography
+## Classic cryptography
 - [New Directions in Cryptography](https://ee.stanford.edu/~hellman/publications/24.pdf)
 - [A Method for Obtaining Digital Signatures and Public-Key Cryptosystems (RSA)](https://people.csail.mit.edu/rivest/Rsapaper.pdf)
 
-### Blockchain basics
+## Blockchain basics
 - [Bitcoin white paper](https://bitcoin.org/bitcoin.pdf)
 - [Ethereum white paper](https://ethereum.org/669c9e2e2027310b6b3cdce6e1c52962/Ethereum_Whitepaper_-_Buterin_2014.pdf)
 - [Crypto glossary](https://a16z.com/2019/11/08/crypto-glossary/)
@@ -41,6 +40,12 @@ Technology is a powerful force in our society. Data, software, and communication
 - [Paxos(etcd) vs. Nakamoto(Bitcoin) consensus](https://gyuho.dev/paxos-etcd-vs-nakamoto-bitcoin-consensus.html)
 - [Nakamoto Bitcoin vs Snow Avalanche consensus](https://gyuho.dev/nakamoto-bitcoin-vs-snow-avalanche-consensus.html)
 - [Tendermint whitepaper](https://tendermint.com/static/docs/tendermint.pdf)
+
+## Distributed Systems
+- [Practical Networked Applications in Rust](https://github.com/pingcap/talent-plan/blob/master/courses/rust/README.md)
+- [Distributed Systems in Rust](https://github.com/pingcap/talent-plan/blob/master/courses/dss/README.md)
+- [TinySQL: A course to build the SQL layer of a distributed database](https://github.com/talent-plan/tinysql)
+- [TinyKV: A course to build distributed key-value service based on TiKV model](https://github.com/talent-plan/tinykv)
 
 ### Zero Knowledge Proofs
 - [What are zk-SNARKs?](https://z.cash/technology/zksnarks/)
@@ -53,6 +58,7 @@ Technology is a powerful force in our society. Data, software, and communication
 ## Courses
 - [CS 251: Blockchain Technologies](https://cs251.stanford.edu/syllabus.html)
 - [Decentralized Finance MOOC](https://defi-learning.org/f22)
+- [6.824 Distributed Systems](http://nil.csail.mit.edu/6.824/2017/schedule.html)
 
 ## Books
 - Programming Bitcoin
