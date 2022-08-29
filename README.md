@@ -23,9 +23,6 @@ Technology is a powerful force in our society. Data, software, and communication
 * Nomad
 * Fabio
 
-#### Project Management
-* Clickup
-
 ## Classic cryptography
 - [New Directions in Cryptography](https://ee.stanford.edu/~hellman/publications/24.pdf)
 - [A Method for Obtaining Digital Signatures and Public-Key Cryptosystems (RSA)](https://people.csail.mit.edu/rivest/Rsapaper.pdf)
