@@ -42,12 +42,12 @@ Technology is a powerful force in our society. Data, software, and communication
 - [Tendermint whitepaper](https://tendermint.com/static/docs/tendermint.pdf)
 
 ## Distributed Systems
+- [Aphyr Distsys class](https://github.com/aphyr/distsys-class)
 - [Making reliable distributed systems in the presence of sodware errors - Joe Armstrong](https://erlang.org/download/armstrong_thesis_2003.pdf)
 - [Practical Networked Applications in Rust](https://github.com/pingcap/talent-plan/blob/master/courses/rust/README.md)
 - [Distributed Systems in Rust](https://github.com/pingcap/talent-plan/blob/master/courses/dss/README.md)
 - [TinySQL: A course to build the SQL layer of a distributed database](https://github.com/talent-plan/tinysql)
 - [TinyKV: A course to build distributed key-value service based on TiKV model](https://github.com/talent-plan/tinykv)
-
 
 ### Zero Knowledge Proofs
 - [What are zk-SNARKs?](https://z.cash/technology/zksnarks/)
