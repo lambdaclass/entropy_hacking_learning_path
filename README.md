@@ -49,6 +49,9 @@ Technology is a powerful force in our society. Data, software, and communication
 - [TinySQL: A course to build the SQL layer of a distributed database](https://github.com/talent-plan/tinysql)
 - [TinyKV: A course to build distributed key-value service based on TiKV model](https://github.com/talent-plan/tinykv)
 
+## Papers
+- [Readings in distributed systems - Christopher Meiklejohn](http://christophermeiklejohn.com/distributed/systems/2013/07/12/readings-in-distributed-systems.html)
+
 ### Zero Knowledge Proofs
 - [What are zk-SNARKs?](https://z.cash/technology/zksnarks/)
 - [Quadratic Arithmetic Programs: from Zero to Hero](https://medium.com/@VitalikButerin/quadratic-arithmetic-programs-from-zero-to-hero-f6d558cea649)
