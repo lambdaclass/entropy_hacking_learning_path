@@ -30,6 +30,9 @@ Technology is a powerful force in our society. Data, software, and communication
 - [New Directions in Cryptography](https://ee.stanford.edu/~hellman/publications/24.pdf)
 - [A Method for Obtaining Digital Signatures and Public-Key Cryptosystems (RSA)](https://people.csail.mit.edu/rivest/Rsapaper.pdf)
 
+### Crypto challenges
+- [The cryptopals crypto challenges](https://cryptopals.com/)
+
 ## Blockchain basics
 - [Bitcoin white paper](https://bitcoin.org/bitcoin.pdf)
 - [Ethereum white paper](https://ethereum.org/669c9e2e2027310b6b3cdce6e1c52962/Ethereum_Whitepaper_-_Buterin_2014.pdf)
