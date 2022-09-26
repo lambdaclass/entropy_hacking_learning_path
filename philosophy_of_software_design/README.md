@@ -10,6 +10,6 @@ Being a strategical programmer means that:
 - The most important thing to you is the long-term structure of the system.
 - You'll take a little extra time to find simpler designs for every implementation of yours and to solve any design problem that you find (you have an investment mindset).
 
-Whilst being a tactical programmer means that your main focus is to get something working without spending too much time thinking about the design.
+While being a tactical programmer means that your main focus is to get something working without spending too much time thinking about the design.
 
 If you implement a tactical programming approach, instead of continually making small improvements to the system design (strategical programming) you will be adding complexity.
