@@ -2,9 +2,7 @@
 
 This document is a summary of the book Philosophy of Software Design.
 
-## Chapter 1
-### Introduction
-### (It's All About Complexity)
+## 1. It's All About Complexity
 
 The greatest limitation in writing software is our ability to understand the systems we are creating. As a program evolves, complexity inevitably increases and the system becomes harder to understand, slowing down development and leading to bugs.
 There are two general approaches to fighting complexity:
