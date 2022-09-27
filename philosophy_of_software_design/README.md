@@ -9,23 +9,37 @@ There are two general approaches to fighting complexity:
 - Making code simpler and more obvious. For example, eliminating special cases or using identifiers in a consistent fashion.
 - Encapsulate complexity, so that programmers can work on a system without being exposed to all of its complexity at once. This approach is called **modular design**, as the software system is divided up into modules designed to be relatively independent of each other.
 
-## The Nature of Complexity
+## 2. The Nature of Complexity
 
-Recognize complexity allows you to identify problems before invest a lot of
-effort in them, and it allows you to make good choices among alternatives.
 _Complexity is anything related to the structure of a software system that
 makes it hard to understand and modify the system_, if a software system is
 hard to understand and modify, then it is complicated, otherwise is simple. In
-terms of cost benefit. In a complex system, it takes a lot of work to implement
-small improvements. In a simple one, larger improvements can be implemented
-with less effort. Isolating complexity in a place where it will never be seen
-is almost as good as eliminating the complexity entirely. Complexity is more
-apparent to readers than writer if you write a piece of code and it seems
+a complex system, it takes a lot of work to implement small improvements. In a
+simple one, larger improvements can be implemented with less effort. Isolating
+complexity in a place where it will never be seen is almost as good as
+eliminating the complexity entirely. If you write a piece of code and it seems
 simple to you, but other people think it's complex, then it is complex. A
 developers job is not just to create code that you can work easily, but to
 create code that others can also work with easily.
 
 Complexity manifests itself in three general ways:
 - Change amplification: Simple change requires code modifications in many
-  different places. One of the goals of good design is to reduce the amount of
-  code that's affected by each design decision
+  different places.
+- Cognitive Load: A high cognitive load means that the developer needs to spend
+  a lot of time learning the required information and there is a greater risk
+  of bugs because they missed something important. **Sometimes an approach that
+  requires more lines of code is actually simpler, because it reduces cognitive
+  load**
+- Unknown Unknowns: It's not clear which pieces of code must be modified to
+  complete a task or what information a developer must have to carry out the
+  task successfully. This is the worst symptom of complexity.
+
+Complexity is caused by two things: _dependencies_ and _obscurity_. A
+dependency exists when a piece of code cannot be understood and modified
+without understand another piece of code. The idea is to reduce dependency and
+make it as simple and obvious as possible. Obscurity occurs when information is
+not obvious. Obscurity is often associated with dependency and inconsistency.
+The need for extensive documentation is often a sign that the design isn't
+quite right. Complexity is incremental, it comes from an accumulation of
+dependencies and obscurities.
+
