@@ -1,4 +1,4 @@
-# Philosophy of Software Design
+Philosophy of Software Design
 
 This document is a summary of the book Philosophy of Software Design.
 
@@ -43,3 +43,14 @@ The need for extensive documentation is often a sign that the design isn't
 quite right. Complexity is incremental, it comes from an accumulation of
 dependencies and obscurities.
 
+## 3. 
+
+## 4. Modules Should be Deep
+
+Modular design attempts to minimize the dependencies between the modules that conform a system, trying to keep them as independent as possible from each other.
+We think of each module in two parts:
+  - Interface: it abstracts the module, describing _what_ it does.
+  - Implementation: the code that carries out what the interface states.
+We could also classify modules into two categories:
+  - Deep modules: they provide powerful functionalities yet have simple interfaces.
+  - Shallow modules: a relatively complex interface in comparison to the functionality that it provides. 
