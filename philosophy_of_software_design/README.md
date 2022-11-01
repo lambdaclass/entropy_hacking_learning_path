@@ -51,3 +51,19 @@ This is what being each other means:
 - **Tactical programmers**: their main focus is to get something working without spending too much time thinking about the design.
 
 If you implement a tactical programming approach, instead of continually making small improvements to the system design (strategical programming) you will be adding complexity. You should have an investment mindset.
+
+## 4. Modules Should be Deep
+
+Modular design attempts to minimize the dependencies between the modules that conform a system, trying to keep them as independent as possible from each other.
+
+We think of each module in two parts:
+  - Interface: it abstracts the module, describing _what_ it does.
+  - Implementation: the code that carries out what the interface states.
+
+An abstraction is a simplified view of an entity, which omits unimportant details. In modular programming, each module provides an abstraction in the form of its interface. Separating the interface of a module from its implementation helps to hide the complexity of the implementation from the rest of the system.
+
+We could also classify modules into two categories:
+  - Deep modules: they provide powerful functionalities hidden behind simple interfaces. It's a good abstraction because only a small fraction of its internal complexity is visible to its users.
+  - Shallow modules: a relatively complex interface in comparison to the functionality that it provides. They give a small benefit in comparison to the cost of learning and using their interfaces.
+
+![Deep vs shallow diagram](figures/deep_vs_shallow.png)
