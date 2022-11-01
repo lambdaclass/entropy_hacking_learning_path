@@ -68,7 +68,7 @@ We could also classify modules into two categories:
 
 ![Deep vs shallow diagram](figures/deep_vs_shallow.png)
 
-# 5. Information Hiding (and Leakage)
+## 5. Information Hiding (and Leakage)
 
 The most important technique for achieving deep modules is _information hiding_. Each module should encapsulate a few pieces of knowledge, which represents design decisions. The hidden information consists of details about how to implement some mechanism. This technique reduces complexity in to ways:
 - The interfaces reflects a simpler and more abstract view of the module's capability so it reduces the cognitive-load for other developers.
