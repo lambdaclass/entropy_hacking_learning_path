@@ -67,3 +67,19 @@ We could also classify modules into two categories:
   - Shallow modules: a relatively complex interface in comparison to the functionality that it provides. They give a small benefit in comparison to the cost of learning and using their interfaces.
 
 ![Deep vs shallow diagram](figures/deep_vs_shallow.png)
+
+# 5. Information Hiding (and Leakage)
+
+The most important technique for achieving deep modules is _information hiding_. Each module should encapsulate a few pieces of knowledge, which represents design decisions. The hidden information consists of details about how to implement some mechanism. This technique reduces complexity in to ways:
+- The interfaces reflects a simpler and more abstract view of the module's capability so it reduces the cognitive-load for other developers.
+- It makes easier to evolve the system since the hidden information it's not being used outside the module.
+
+The best form of information hiding is when information is totally hidden within a module so is invisible to users of the module. Declaring methods or variables as _private_ can help but getters and setters make the information as public as if the variables were public.
+
+The opposite of information hiding is _information leakage_. This occurs when the same knowledge is used in multiple places creating a dependency between modules. There's two common natures of information leakage, leaking through the interface or back-door leakage when two modules depends on the same piece of knowledge so if a change is needed both modules will need to be modified.
+
+_Temporal decomposition_ is a design style which incurs on information leakage. In temporal decomposition the structure of a system corresponds to the time order in which operations will occur. For example operations that happen at different times are in different methods or classes. When designing modules, focus on the knowledge that's needed to perform each task, not the order in which tasks occur.
+
+Information hiding can often be improved by making a module slightly larger. All the code for one capability should be in one single module to produce simpler interfaces. Default values illustrate an example of partial information hiding, whenever possible a module should "do the right thing" without explicitly declaring to it. Information hiding also applies within a module encapsulating information between methods and minimizing the places where variables needs to be accessed by other methods. 
+
+It's important to not hide information if the information is needed outside its module or if it affect directly on the module behaviour.
