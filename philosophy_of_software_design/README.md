@@ -51,7 +51,6 @@ This is what being each other means:
 - **Tactical programmers**: their main focus is to get something working without spending too much time thinking about the design.
 
 If you implement a tactical programming approach, instead of continually making small improvements to the system design (strategical programming) you will be adding complexity. You should have an investment mindset.
-## 3. 
 
 ## 4. Modules Should be Deep
 
