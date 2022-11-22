@@ -81,3 +81,15 @@ The opposite of information hiding is _information leakage_. This occurs when th
 Information hiding can often be improved by making a module slightly larger. All the code for one capability should be in one single module to produce simpler interfaces (this relates to the module depth idea from previous section). Default values illustrate an example of partial information hiding, whenever possible a module should "do the right thing" without explicitly have to declaring to it. Information hiding also applies within a module encapsulating information between methods and minimizing the places where variables needs to be accessed by other methods. 
 
 It's important to not hide information if the information is needed outside its module or if it affects directly the module behaviour.
+
+## 7. Different Layer, Different Abstraction
+
+In a well-designed system, each layer provides a different abstraction from the layers above and below it. Adjacent layers with similar abstractions, such as pass-through methods as a result of a bad division of responsibilities, are a red flag.                     
+         
+The solution is to refactor the classes, typically following one of the following approaches:
+ - Expose the lower level class directly to the callers of the higher level class, removing all responsibility for the feature from the higher level class.
+ - Redistribute the functionality between the classes.
+ - If the classes can't be disentangled, merge them.
+
+There are some exceptions where interface duplication is accepted, as in dispatcher methods, where the method uses its arguments to select one of several other methods to invoke, which often have the same signature as the dispatcher. Here the dispatcher provides useful functionality, choosing which of several other methods should carry out each task. 
+
