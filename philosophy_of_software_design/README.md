@@ -118,3 +118,16 @@ Use discretion when pulling complexity downwards. This makes the most sense if:
 ## 11. Design it Twice
 
 It's unlikely that your first thoughts about how to structure a module or system will produce the best design. You'll reach better results if you consider multiple options for each major design decision: **design it twice**. When thinking on different approaches to solve something try to pick approaches that are radically different from each other, even if there's only one reasonable approach and no matter how bad you think the other options would be this will be instructive to think about the weaknesses of that design and contrast them with the features of other designs.
+
+
+## 7. Different Layer, Different Abstraction
+
+In a well-designed system, each layer provides a different abstraction from the layers above and below it. Adjacent layers with similar abstractions, such as pass-through methods as a result of a bad division of responsibilities, are a red flag.                     
+         
+The solution is to refactor the classes, typically following one of the following approaches:
+ - Expose the lower level class directly to the callers of the higher level class, removing all responsibility for the feature from the higher level class.
+ - Redistribute the functionality between the classes.
+ - If the classes can't be disentangled, merge them.
+
+There are some exceptions where interface duplication is accepted, as in dispatcher methods, where the method uses its arguments to select one of several other methods to invoke, which often have the same signature as the dispatcher. Here the dispatcher provides useful functionality, choosing which of several other methods should carry out each task. 
+
