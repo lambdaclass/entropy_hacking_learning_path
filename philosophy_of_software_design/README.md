@@ -81,3 +81,20 @@ The opposite of information hiding is _information leakage_. This occurs when th
 Information hiding can often be improved by making a module slightly larger. All the code for one capability should be in one single module to produce simpler interfaces (this relates to the module depth idea from previous section). Default values illustrate an example of partial information hiding, whenever possible a module should "do the right thing" without explicitly have to declaring to it. Information hiding also applies within a module encapsulating information between methods and minimizing the places where variables needs to be accessed by other methods. 
 
 It's important to not hide information if the information is needed outside its module or if it affects directly the module behaviour.
+
+## 8. Pull Complexity Downwards
+
+In case of having some unavoidable complexity in your module, should you let users of the module deal with the complexity, or should you handle the complexity internally within the module? If the complexity is related to the functionality provided by the module, then the second answer is usually the right one. It is more important for a module to have a simple interface than a simple implementation.
+
+If a condition arises that you're not certain how to deal with, the easiest thing is to throw an exception and let the caller handle it.If you are not certain what policy to implement, you can define a few configuration parameters to control the policy and leave it up to the system administrator to choose the best values. 
+
+Approaches like these will make your life easier in the short term but they amplify complexity, so that many people must deal with a problem, rather than just one person (the developer). 
+
+You should avoid configuration parameters as much as possible. Before exporting a configuration parameter ask yourself "will users be able to determine a better value than we can determine here?" Reasonable default values are usually the best option.
+
+Use discretion when pulling complexity downwards. This makes the most sense if:
+- The complexity being pulled down is closely related to the class's existing functionality
+- Pulling the complexity down will result in simplifications elsewhere in the application
+- Pulling the complexity down simplifies the class's interface.
+
+
