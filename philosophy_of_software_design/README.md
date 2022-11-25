@@ -97,4 +97,12 @@ Use discretion when pulling complexity downwards. This makes the most sense if:
 - Pulling the complexity down will result in simplifications elsewhere in the application
 - Pulling the complexity down simplifies the class's interface.
 
+## 11. Design it Twice
 
+It's unlikely that your first thoughts about how to structure a module or system will produce the best design. You'll reach better results if you consider multiple options for each major design decision: **design it twice**.
+
+When thinking on different approaches try to pick approaches that are radically different from each other, even if there's only one reasonable approach, no matter how bad you think they would be this will be instructive to think about the weaknesses of that design and contrast them with the features of other designs.
+
+The best design may be one of the alternatives or you may discover that you can combine features of multiple alternative in a new design. Sometimes none of the alternatives is particularly attractive, in that case see if you can come up with additional schemes. Designing it twice doesn't need to take a lot of extra time, and is short compared to the days or weeks implementing the design.
+
+In the design of large software systems no one is good enough to get it right with their first try.
