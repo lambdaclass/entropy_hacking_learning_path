@@ -87,7 +87,6 @@ It's important to not hide information if the information is needed outside its 
 In case of having some unavoidable complexity in your module, should you let users of the module deal with the complexity, or should you handle the complexity internally within the module? If the complexity is related to the functionality provided by the module, then the second answer is usually the right one. **It is more important for a module to have a simple interface than a simple implementation**.
 
 If a condition arises that you're not certain how to deal with, the easiest thing is to throw an exception and let the caller handle it.If you are not certain what policy to implement, you can define a few configuration parameters to control the policy and leave it up to the system administrator to choose the best values. 
-
 Approaches like these will make your life easier in the short term but they amplify complexity, so that many people must deal with a problem, rather than just one person (the developer). 
 
 You should avoid configuration parameters as much as possible. Before exporting a configuration parameter ask yourself "will users be able to determine a better value than we can determine here?" Reasonable default values are usually the best option.
