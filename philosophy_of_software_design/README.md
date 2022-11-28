@@ -85,7 +85,6 @@ It's important to not hide information if the information is needed outside its 
 ## 7. Different Layer, Different Abstraction
 
 In a well-designed system, each layer provides a different abstraction from the layers above and below it. Adjacent layers with similar abstractions, such as pass-through methods as a result of a bad division of responsibilities, are a red flag.                     
-         
 The solution is to refactor the classes, typically following one of the following approaches:
  - Expose the lower level class directly to the callers of the higher level class, removing all responsibility for the feature from the higher level class.
  - Redistribute the functionality between the classes.
@@ -93,3 +92,11 @@ The solution is to refactor the classes, typically following one of the followin
 
 There are some exceptions where interface duplication is accepted, as in dispatcher methods, where the method uses its arguments to select one of several other methods to invoke, which often have the same signature as the dispatcher. Here the dispatcher provides useful functionality, choosing which of several other methods should carry out each task. 
 
+An example of API duplication across layers is the Decorator design pattern, that tends to introduce a lot of boilerplate in shallow classes with little functionality, often with many pass-through methods.
+
+Another form of API duplication across layers is a pass-through variable, which is a variable that is passed down through a long chain of methods, adding complexity and making changes more difficult to implement.
+
+The author mentions two approaches to eliminate pass-through variables:
+  - Check if there's already an object shared between the topmost and bottommost methods, and use it.
+  - Store the information in a global variable (which is usually undesirable).
+  - Introduce a context object, that stores all of the application's global state. If a new variable needs to be added, it can be added to this object.
