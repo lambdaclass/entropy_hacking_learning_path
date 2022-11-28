@@ -84,7 +84,7 @@ It's important to not hide information if the information is needed outside its 
 
 ## 8. Pull Complexity Downwards
 
-In case of having some unavoidable complexity in your module, should you let users of the module deal with the complexity, or should you handle the complexity internally within the module? If the complexity is related to the functionality provided by the module, then the second answer is usually the right one. It is more important for a module to have a simple interface than a simple implementation.
+In case of having some unavoidable complexity in your module, should you let users of the module deal with the complexity, or should you handle the complexity internally within the module? If the complexity is related to the functionality provided by the module, then the second answer is usually the right one. **It is more important for a module to have a simple interface than a simple implementation**.
 
 If a condition arises that you're not certain how to deal with, the easiest thing is to throw an exception and let the caller handle it.If you are not certain what policy to implement, you can define a few configuration parameters to control the policy and leave it up to the system administrator to choose the best values. 
 
