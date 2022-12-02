@@ -98,6 +98,4 @@ Use discretion when pulling complexity downwards. This makes the most sense if:
 
 ## 11. Design it Twice
 
-It's unlikely that your first thoughts about how to structure a module or system will produce the best design. You'll reach better results if you consider multiple options for each major design decision: **design it twice**.
-
-When thinking on different approaches try to pick approaches that are radically different from each other, even if there's only one reasonable approach, no matter how bad you think they would be this will be instructive to think about the weaknesses of that design and contrast them with the features of other designs.
+It's unlikely that your first thoughts about how to structure a module or system will produce the best design. You'll reach better results if you consider multiple options for each major design decision: **design it twice**. When thinking on different approaches to solve something try to pick approaches that are radically different from each other, even if there's only one reasonable approach and no matter how bad you think the other options would be this will be instructive to think about the weaknesses of that design and contrast them with the features of other designs.
