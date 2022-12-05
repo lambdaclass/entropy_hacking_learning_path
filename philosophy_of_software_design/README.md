@@ -82,6 +82,25 @@ Information hiding can often be improved by making a module slightly larger. All
 
 It's important to not hide information if the information is needed outside its module or if it affects directly the module behaviour.
 
+## 7. Different Layer, Different Abstraction
+
+In a well-designed system, each layer provides a different abstraction from the layers above and below it. Adjacent layers with similar abstractions, such as pass-through methods as a result of a bad division of responsibilities, are a red flag.                     
+The solution is to refactor the classes, typically following one of the following approaches:
+ - Expose the lower level class directly to the callers of the higher level class, removing all responsibility for the feature from the higher level class.
+ - Redistribute the functionality between the classes.
+ - If the classes can't be disentangled, merge them.
+
+There are some exceptions where interface duplication is accepted, as in dispatcher methods, where the method uses its arguments to select one of several other methods to invoke, which often have the same signature as the dispatcher. Here the dispatcher provides useful functionality, choosing which of several other methods should carry out each task. 
+
+An example of API duplication across layers is the Decorator design pattern, that tends to introduce a lot of boilerplate in shallow classes with little functionality, often with many pass-through methods.
+
+Another form of API duplication across layers is a pass-through variable, which is a variable that is passed down through a long chain of methods, adding complexity and making changes more difficult to implement.
+
+The author mentions two approaches to eliminate pass-through variables:
+  - Check if there's already an object shared between the topmost and bottommost methods, and use it.
+  - Store the information in a global variable (which is usually undesirable).
+  - Introduce a context object, that stores all of the application's global state. If a new variable needs to be added, it can be added to this object.
+
 ## 8. Pull Complexity Downwards
 
 In case of having some unavoidable complexity in your module, should you let users of the module deal with the complexity, or should you handle the complexity internally within the module? If the complexity is related to the functionality provided by the module, then the second answer is usually the right one. **It is more important for a module to have a simple interface than a simple implementation**.
