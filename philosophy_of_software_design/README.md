@@ -115,6 +115,16 @@ Use discretion when pulling complexity downwards. This makes the most sense if:
 - Pulling the complexity down will result in simplifications elsewhere in the application
 - Pulling the complexity down simplifies the class's interface.
 
+## 10. Define errors out of existence
+
+Exception handling contributes a lot to the complexity of a software system, as it refers to uncommon conditions that disrupt the normal flow of the code and it's sometimes difficult to test.
+
+The best way to reduce the complexity caused by exception handling is to reduce the number of places where exceptions have to be handled. The author discusses four techniques to achieve this:
+- Define errors out of existence: write APIs so that there are no exceptions to handle.
+- Mask exceptions: an exceptional condition is detected and handled at a low level in the system, so that higher levels of software need not be aware of the condition, pulling the complexity downward.
+- Exception aggregation: handle many exceptions with a single piece of code. Instead of writing distinct handlers for many individual exceptions, handle them all in one place with a single handler. This works best if an exception propagates several levels up the stack before it's handled; this allows more exceptions from more methods to be handled in the same place.
+- Just crash: in most applications there will be certain errors that are not worth trying to handle. Print diagnostic information and then abort the application.
+
 ## 11. Design it Twice
 
 It's unlikely that your first thoughts about how to structure a module or system will produce the best design. You'll reach better results if you consider multiple options for each major design decision: **design it twice**. When thinking on different approaches to solve something try to pick approaches that are radically different from each other, even if there's only one reasonable approach and no matter how bad you think the other options would be this will be instructive to think about the weaknesses of that design and contrast them with the features of other designs.
